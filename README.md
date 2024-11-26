@@ -2,7 +2,7 @@
 This repository contains an analysis of messages from russian telegram channels with propaganda. The goal of this project is to find interesting patterns, analyze viewers' reactions and engagement to different occasions, and discover the most popular bigrams/trigrams and how they changed over time.
 
 # About Data
-Main dataset has this columns: id, date, views, reactions, to_id, fwd_from, message, type, duration, dialog_id, frw_from_title, frw_from_name. Updated dataset after adding sentiment, also has column sentiment_score.
+Main dataset has this columns: id, date, views, reactions, to_id, fwd_from, message, type, duration, dialog_id, frw_from_title, frw_from_name. Updated dataset after adding sentiment also has column sentiment_score.
 
 - Unnnamed: 0: Unique identifier for each record.
 - id: Another unique identifier.
@@ -19,7 +19,7 @@ Main dataset has this columns: id, date, views, reactions, to_id, fwd_from, mess
 - sentiment_score: Sentiment analysis score for the message.
   
 # Features
-- Reactions Analysis: Adding `positive_reactions_count`/`negative_reactions_count`, `positive_reactions_percentage`/negative_reactions_percentage` columns to messages.
+- Reactions Analysis: Adding `positive_reactions_count`/`negative_reactions_count`, `positive_reactions_percentage`/`negative_reactions_percentage` columns to messages.
 - Text Processing: Text is processed using nltk library, which helps to find the most common bigrams, trigrams, and words that occur in the same sentence with a certain word, before and after certain words.
 - Sentiment Analysis: Every message's sentiment is defined using [kartaslovsent](https://github.com/dkulagin/kartaslov/tree/master/dataset/kartaslovsent).
 - Data Visualization: The analysis results are visualized using matplotlib and WordCloud for easy interpretation of trends, word frequencies, and reaction dependencies.
